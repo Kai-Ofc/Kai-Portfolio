@@ -1,0 +1,1265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    transition: .5s;
+}
+
+.nao-aparece{
+    display: none;
+}
+
+/*Cabeçalho*/
+
+#header{
+    width: 100%;
+    height:8vh;
+    font-size: 23px;
+    border-bottom: solid #BCDCFC 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#logo{
+    position: relative;
+}
+
+#k{
+    color: white;
+    margin-left: 2.2vh;
+}
+
+#logo-detalhe{
+    position: absolute;
+    z-index: -1;
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background-color: #AC346C; 
+}
+
+#menu{
+    margin-bottom: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    font-size: 19px;
+}
+
+.menu-li{
+    margin-right: 2%;
+    list-style: none;
+    margin-left: 2%;
+}
+
+#home{
+    color: #AC346C;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.link:hover{
+    color: #AC346C;
+    text-decoration: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#modo-escuro-botao{
+    position: relative;
+    background: none;
+    width: 35px;
+    height: 35px;
+}
+
+#modo-escuro-botao svg{
+    fill: #AC346C;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+#modo-escuro-botao svg:hover{
+    cursor: pointer;
+    transition: .5s;
+    fill: #6A0032;
+
+}
+
+/*Inicio*/
+
+#inicio{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#inicio-text{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .7fr .1fr .1fr .4fr .4fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 2px solid #BCDCFC;
+}
+
+#inicio-text .linha{
+    margin-bottom: 20vh;
+}
+
+#inicio-text .inicio-text{
+    font-size: 25px;
+}
+
+#nome{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+#kai{
+    position: relative;
+    font-size: 128px;
+    color: black;
+}
+
+#nome svg{
+    position: absolute;
+    z-index: -1;
+    margin-right: 31%;
+    margin-bottom: 3%;
+    fill: #AC346C;
+}
+
+#nome svg+svg{
+    position: absolute;
+    z-index: -2;
+    margin-right: 34%;
+    margin-bottom: 2%;
+    fill: #6A0032;
+}
+
+.rosa{
+    color: #AC346C;
+}
+
+.linha{
+    width: 20%;
+    height: .7vh;
+    border-radius: 25px;
+    margin-bottom: 2vh;
+    background-color: #AC346C;
+}
+
+#botoes-container{
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.redes-azul{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    background-color: #BCDCFC;
+    transition: .5s;
+}
+
+.redes-azul:hover{
+    background-color: #55ACEE;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.redes-rosa{
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    background-color: #AC346C;
+    fill: white;
+    transition: .5s;
+}
+
+.redes-rosa:hover{
+    background-color: #6A0032;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.icone{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.branco{
+    color: white;
+}
+
+#curriculo-botao{
+    position: relative;
+    width: 400px;
+    height: 76px;
+    border-radius: 28px;
+    text-align: center;
+    background-color: #AC346C;
+    box-shadow: -4px 4px 0px 1px #6A0032;
+    transition: .5s;
+    font-size: 32px;
+}
+
+#curriculo-botao:hover{
+    background-color: #6A0032;
+    transition: .5s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#curriculo-botao span{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Avatar*/
+
+#avatar{
+    position: relative;
+    width: 100%;
+    height: 634px;
+    background-color: #E2F1FF;
+}
+
+#avatar img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Opçoes*/
+
+#opcao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%;
+    height: 14vh;
+    border-radius: 15px;
+    padding: 25px;
+    border: #BCDCFC 2px solid;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.opcao{
+    position: relative;
+    width: 374px;
+    height: 65px;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: center;
+    background: none;
+}
+
+.selecionado{
+    background-color: #BCDCFC;
+}
+
+.opcao:hover{
+    cursor: pointer;
+}
+
+.opcao span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Portifolio*/
+
+#portifolio{
+    display: grid;
+    grid-template-columns: .8fr .8fr;
+    grid-template-rows: 1fr .2fr 1fr .2fr 1fr;
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    row-gap: 2vh;
+    margin: 0 auto;
+}
+
+.projeto{
+    display: grid;
+    grid-template-rows: 1fr .2fr .1fr .2fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.imagem{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.imagem img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s;
+}
+
+.imagem img:hover{
+    transition: .5s;
+    filter: saturate(1);
+    transform: scale(1.02);
+    filter: brightness(20%);
+    cursor: pointer;
+}
+
+.imagem span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -99;
+    opacity: 0;
+    color: white;
+}
+
+.imagem:hover span{
+    z-index: 99;
+    opacity: 1;
+    transition: .5s;
+}
+
+.linha-projeto{
+    width: 60%;
+    height: .7vh;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+    background-color: #AC346C;
+}
+
+.linha-projeto2{
+    width: 60%;
+    height: .7vh;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+    background-color: #BCDCFC;
+}
+
+.divisor{
+    width: 97%;
+    height: 1px;
+    background-color: #BCDCFC;
+    grid-column: span 2;
+}
+
+/*Habilidades*/
+
+#habilidades{
+    display: none;
+    grid-template-columns: .8fr .8fr;
+    grid-template-rows: 1fr .2fr 1fr .2fr 1fr .1fr .2fr .1fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    row-gap: 2.5vh;
+    margin: 0 auto;
+}
+
+.habilidade{
+    margin-top: 3vh;
+    display: grid;
+    grid-template-rows: 1fr .2fr .1fr .2fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.imagem-habilidade{
+    width: 100%;
+    height: 34vh;
+    border-radius: 15px;
+    fill: #AC346C;
+    transition: .5s;
+}
+
+.azul{
+    fill: #BCDCFC;
+    transition: .5s;
+}
+
+.imagem-habilidade:hover{
+    fill: #6A0032;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+.azul:hover{
+    fill: #55ACEE;
+}
+
+.linha-projeto{
+    width: 60%;
+    height: .7vh;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+    background-color: #AC346C;
+}
+
+.linha-projeto2{
+    width: 60%;
+    height: .7vh;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+    background-color: #BCDCFC;
+}
+
+#habilidades .premios{
+    font-size: 36px;
+    text-align: center;
+    grid-column: span 2;
+}
+
+#habilidades .linha{
+    margin: 0 auto;
+    height: .5vh;
+    width: 70%;
+    margin-top: .3vh;
+}
+
+/*Sobre Mim*/
+
+#sobre-mim{
+    width: 80%;
+    display: grid;
+    grid-template-rows: .2fr .1fr 2fr .3fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+#sobre-mim .linha{
+    width: 12%;
+    height: .6vh;
+    margin-bottom: 5vh;
+}
+
+#sobre-mim #titulo-sobre{
+    font-size: 36px;
+    text-align: center;
+}
+
+#sobre-text{
+    width: 100%;
+    border: 3px solid #BCDCFC;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+#sobre-text p{
+    font-size: 25px;
+}
+
+.sobre-divisor{
+    width: 97%;
+    height: 1px;
+    background-color: #BCDCFC; 
+    
+}
+
+/*Contato*/
+
+#contato{
+    width: 80%;
+    display: grid;
+    /*grid-template-columns: 1fr .1fr 1fr;*/
+    grid-template-columns: 1fr;
+    border: #BCDCFC 2px solid;
+    align-items: start;
+    justify-items: center;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+
+#contato-container{
+    width: 60%;
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    /*row-gap: 9vh;*/
+    row-gap: 3vh;
+    font-size: 32px;
+    /*column-gap: 5%;*/
+    /*margin-right: 3%;*/
+}
+
+#contact-label{
+    grid-column: span 2;
+    font-size: 32px;
+    color: #6A0032;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#telefone{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #BCDCFC;
+}
+
+#telefone svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#email{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background-color: #AC346C;
+}
+
+#email svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+}
+
+.linha-contato{
+    width: 100%;
+    height: .7vh;
+    border-radius: 25px;
+    margin-top: 1vh;
+    background-color: #AC346C;
+}
+
+/*/*Divisor
+
+#contato-divisor{
+    width: 5%;
+    height: 100%;
+    background-color: #BCDCFC;
+    margin: 0 auto;
+}
+
+/*Contato - Menssagem
+
+#contato-email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #BCDCFC;
+    outline: none;
+    color: #AC346C;
+    font-size: 20px;
+    margin-bottom: 2.5vh;
+    background: none;
+}
+
+.nome{
+    text-transform: capitalize;
+}
+
+.rosa-input{
+    color: #55ACEE;
+    border: 2px solid #AC346C;
+    background: none;
+}
+
+.input::placeholder{
+    color: #AC346C;
+}
+
+.rosa-input::placeholder{
+    color: #55ACEE;
+}
+
+#menssagem{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #BCDCFC;
+    outline: none;
+    resize: none;
+    color: #AC346C;
+    font-size: 20px;
+    margin-bottom: 2.5vh;
+    background: none;
+}
+
+#menssagem::placeholder{
+    color: #AC346C;
+}
+
+#botao-enviar{
+    width: 40%;
+    height: 6vh;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #BCDCFC;
+    font-size: 20px;
+    color: #000;
+    border: none;
+    transition: .5s;
+}
+
+#botao-enviar:hover{
+    cursor: pointer;
+    background-color: #55ACEE;
+    transition: .5s;
+}*/
+
+
+/*seleção*/
+::selection{
+    color: white;
+    background-color: #AC346C;
+}
+
+/*Modo escuro*/
+
+.dark-mode {
+    background-color: #140f00;
+    color: #fef9ec;
+    transition: .5s;
+}
+
+/*Header Modo Escuro*/
+.dark-mode #header{
+    border-bottom: solid #032444 2px;
+}
+
+.dark-mode a{
+    color: #fef9ec ;
+}
+
+/*Inicio Modo Escuro*/
+.dark-mode #kai{
+    color: #fef9ec ;
+    transition: .5s;
+}
+
+.dark-mode .redes-azul{
+    background-color:  #032444;
+    fill: #fef9ec;
+}
+
+.dark-mode .redes-azul:hover{
+    background-color: #021425;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.dark-mode .redes-rosa{
+    background-color: #cb528b;
+    fill: #140f00;
+}
+
+.dark-mode .redes-rosa:hover{
+    background-color: rgb(151, 14, 78);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.dark-mode #inicio-text{
+    border-bottom: 2px solid #032444;
+}
+
+.dark-mode .rosa{
+    color: #cb528b;
+}
+
+.dark-mode .linha{
+    background-color: #cb528b;
+}
+
+.dark-mode #curriculo-botao{
+    
+    color: #140f00;
+    background-color: #cb528b;
+    box-shadow: -4px 4px 0px 1px #6A0032;
+    transition: .5s;
+}
+
+.dark-mode #curriculo-botao:hover{
+    color: #fef9ec;
+    background-color: #6A0032;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*Avatar Modo Escuro*/
+.dark-mode #avatar{
+    background-color: #032444;
+    transition: .5s;
+}
+
+/*Opções Modo Escuro*/
+
+.dark-mode #opcao{
+    border: #032444 2px solid;
+}
+
+.dark-mode .selecionado{
+    background-color: #032444;
+    color: #fef9ec;
+}
+
+
+/*Projetos Modo Escuro*/
+
+.dark-mode .linha-projeto{
+    background-color: #cb528b;
+}
+
+.dark-mode .linha-projeto2{
+    background-color: #032444;
+}
+
+.dark-mode .divisor{
+    background-color: #032444;
+}
+
+/*Habilidades Modo Escuro*/
+
+.dark-mode .imagem-habilidade{
+    fill: #cb528b;
+    transition: .5s;
+}
+
+.dark-mode .azul{
+    fill: #032444;
+    transition: .5s;
+}
+
+.dark-mode .imagem-habilidade:hover{
+    fill: #6A0032;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+.dark-mode .azul:hover{
+    fill: #021425;
+}
+
+/*Sobre Mim Modo Escuro*/
+
+.dark-mode .sobre-divisor{
+    background-color: #032444; 
+}
+
+.dark-mode #sobre-text{    
+    border: 3px solid #032444;
+}
+
+/*Contato Modo Escuro*/
+
+.dark-mode #contato{
+    border: #032444 2px solid;
+}
+
+.dark-mode #contact-label{
+    color: #cb528b;
+}
+
+.dark-mode #telefone{
+
+    background-color: #032444;
+}
+
+.dark-mode #telefone svg{
+    fill: #fef9ec;
+}
+
+.dark-mode #email{
+    background-color: #cb528b;
+}
+
+.dark-mode #email svg{
+    fill: #140f00;
+}
+
+.dark-mode #contato-divisor{
+    background-color: #032444;
+}
+
+.linha-contato{
+    background-color: #cb528b;
+}
+
+/*Contato Mensagem Modo Escuro*/
+
+.dark-mode .input{
+    border: 2px solid #032444;
+    color: #fef9ec;
+}
+
+.dark-mode .rosa-input{
+    color: #fef9ec;
+    border: 2px solid #cb528b;
+    background: none;
+}
+
+.dark-mode .input::placeholder{
+    color: #fef9ec;
+}
+
+.dark-mode .rosa-input::placeholder{
+    color: #fef9ec;
+}
+
+.dark-mode #menssagem{
+    border: 2px solid #032444;
+    color: #fef9ec;
+}
+
+.dark-mode #menssagem::placeholder{
+    color: #fef9ec;
+}
+
+.dark-mode #botao-enviar{
+    background-color: #032444;
+    color: #fef9ec;
+}
+
+.dark-mode #botao-enviar:hover{
+    cursor: pointer;
+    background-color: #021425;
+    transition: .5s;
+}
+
+/*Responsividade para telas maiores*/
+
+@media screen and (min-width: 1440px){
+
+    /*Cabeçalho*/
+
+    #header{   
+        padding-right: 0px;
+    }
+
+    #k{
+        color: white;
+        margin-left: 2vh;
+    }
+
+    /*Inicio*/
+    #botoes-container{
+        padding-left: 210px;
+        padding-right: 210px;
+    }
+
+    #nome svg{
+        position: absolute;
+        z-index: -1;
+        margin-right: 24%;
+    }
+    
+    #nome svg+svg{
+        position: absolute;
+        z-index: -2;
+        margin-right: 27%;
+    }
+
+    /*Opção*/
+
+    #opcao{
+        width: 73%;
+    }
+
+    /*Projetos*/
+
+    #portifolio{ 
+        width: 87%;
+    }
+
+    .divisor{
+        width: 80%;
+    }
+
+    /*Sobre Mim*/
+
+    #sobre-text{
+        width: 100%;
+        margin-bottom: 5vh;
+    }
+
+    .sobre-divisor{
+        width: 100%;  
+    }
+
+    /*Contato*/
+
+    #contato{
+        width: 80%;
+    }
+
+    #contato-container{
+        width: 50%;
+    }
+    
+    /*Divisor*/
+    
+    #contato-divisor{
+        width: 3%;
+    }
+
+    /*Contato - Menssagem*/
+
+    #contato-email{
+        width: 80%;
+    }
+
+    #botao-enviar{
+     font-size: 25px;
+    }
+}
+
+/*Responsividade Telas Menores*/
+@media screen and (max-width: 900px){
+
+   /*Cabeçalho*/
+
+   #header{
+        font-size: 19px;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+    #logo-detalhe{
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+    }
+
+    #k{
+        margin-left: 1.3vh !important;
+    }
+
+    #inicio-text .linha{
+        margin-bottom: 6vh;
+    }
+
+    #menu{
+        width: 12%;
+    }
+
+    #modo-escuro{
+        display: block;
+    }
+
+    #li-inicio{
+       display: none;
+   }
+
+    .menu-li{
+        display: none;
+    }
+
+    #modo-escuro-botao svg{
+       height: .9em;
+    }
+
+    /*Inicio*/
+
+   #inicio{
+        display: block;
+        height: auto;
+    }
+
+    #inicio-text .inicio-text{
+        font-size: 18px;
+        margin-bottom: 1vh;
+    }
+
+    #kai{
+        font-size: 70px;
+    }
+
+    #nome svg{
+        width: 90px;
+        height: 100px;
+    }
+
+    .linha{
+        margin: 0 auto;
+        margin-bottom: 2vh;
+    }
+
+    #botoes-container{
+        margin-bottom: 2vh;
+        padding-right: 44px;
+        padding-left: 44px;
+    }
+    
+    .redes-azul{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .redes-azul svg{
+        height: 1.5em;
+    }
+
+    .redes-rosa{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .redes-rosa svg{
+        height: 1.5em;
+    }
+
+    #curriculo-botao{
+        margin: 0 auto;
+        width: 65%;
+        height: 6.5vh;
+        border-radius: 20px;
+        font-size: 21px;
+        margin-bottom: 3vh;
+    }
+
+    /*Avatar*/
+    #avatar{
+        display: none;
+    }
+
+    /*Opçoes*/
+
+    #opcao{
+        width: 90%;
+        height: 6vh;
+        border-radius: 10px;
+        padding: 10px;;
+    }
+
+    .opcao{
+        width: 100%;
+        height: 4vh;
+        border-radius: 10px;
+        font-size: 19px;
+    }
+
+    /*Portifolio*/
+
+    #portifolio{
+        display: block;
+    }
+
+    .projeto{
+        margin-top: 2vh;
+       margin-bottom: 2vh;
+       font-size: 16px;
+    }
+
+    .divisor{
+        width: 100%;
+    }
+
+    /*Habilidades*/
+
+    #habilidades{
+        display: none;
+        grid-template-columns: .8fr .8fr;
+        grid-template-rows: 1fr .2fr 1fr .2fr 1fr .1fr .2fr .1fr;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        row-gap: 2.5vh;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .habilidade{
+        font-size: 16px;
+    }
+
+    .imagem-habilidade{
+        margin-bottom: 2vh;
+        height: 15vh;
+    }
+
+    .imagem-habilidade svg{
+        width: 90px;
+        height: 90px;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    #habilidades .premios{
+        text-align: center;
+        font-size: 26px;
+        margin: 0 auto;
+    }
+
+    /*Sobre Mim*/
+
+    #sobre-mim{
+        width: 90%;
+       display: block;
+       text-align: center;
+       margin-top: 5vh;
+       margin-bottom: 5vh;
+    }
+
+    #sobre-mim .linha{
+        width: 30%;
+        margin-bottom: 4vh;
+    }
+
+    #sobre-mim #titulo-sobre{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #sobre-text{
+        width: 100%;
+        border: 3px solid #BCDCFC;
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    #sobre-text p{
+        font-size: 20px;
+    }
+
+    .sobre-text2{
+        display: none;
+    }
+
+    .sobre-divisor{
+       margin-top: 5vh; 
+    }
+
+    /*Contato*/
+
+    #contato{
+        width: 90%;
+        display: block;
+        padding: 0;
+    }
+    
+    #contato-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 0;
+        row-gap: 2vh;
+        font-size: 20px;
+        margin-bottom: 3vh;
+        padding-top: 30px;
+    }
+    
+    #contact-label{
+        grid-column: span 1;
+        font-size: 26px;
+        color: #6A0032;
+        text-align: center;
+        margin-bottom: 3vh;
+    }
+    
+    #telefone{
+        display: none;
+    }
+    
+    #email{
+        display: none;
+    }
+    
+    /*Divisor*/
+    
+    #contato-divisor{
+        width: 90%;
+        height: .2vh;
+        margin-bottom: 4vh;
+    }
+    
+    /*Contato - Menssagem*/
+    
+    #contato-email{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .input{
+        height: 7vh;
+        font-size: 18px;
+    }
+    
+    #menssagem{
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    #botao-enviar{
+        width: 100%;
+        height: 6vh;
+        border-radius: 10px;
+    }
+    
+}
